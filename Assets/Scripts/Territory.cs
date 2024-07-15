@@ -82,19 +82,19 @@ public class Territory : MonoBehaviour
     {
         Debug.Log("Sei uscito dal Territorio: " + name);
         UpdateColor();
-        turnManagerScript.SetBaseCursor();
+        turnManagerScript.SetBaseCursor();  
     }
 
     public void HoverColor()
     {
         Material newMaterial = new Material(thisRenderer.material);
-        Color originalColor = newMaterial.color;
+        Color originalColor = newMaterial.GetColor("_BaseColor");
 
         Color highlightColor = originalColor * hoverColorIntensity;
 
-        newMaterial.color = highlightColor;
+        newMaterial.SetColor("_BaseColor", highlightColor);
 
-        thisRenderer.material.color = newMaterial.color;
+        thisRenderer.material = newMaterial;
     }
 
     public void UpdateColor()
