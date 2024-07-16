@@ -5,7 +5,7 @@ using UnityEngine;
 public class Territory : MonoBehaviour
 {
     [Header("Informazioni Territorio")]
-    public string name;
+    public int number;
     public List<Territory> neighboringTerritories;
 
     [Header("Cose da settare")]
@@ -52,18 +52,29 @@ public class Territory : MonoBehaviour
     {
         if(turnManagerScript.turnPlayer == owner)
         {
-            Debug.Log("Hai LEFTcliccato sul Territorio: " + name + " nel tuo turno");
-            troopsNumber++;
+            Debug.Log("Hai LEFTcliccato sul Territorio: " + number + " nel tuo turno");
+
+            if (turnManagerScript.turnPhase == "Recruitment" && owner.totalTroops > 0)
+            {
+                Debug.Log("Hai posizionato 1 truppa sul territorio: " + number + " truppe da posizionare: " + owner.totalTroops);
+                troopsNumber++;
+                owner.totalTroops--;
+                if(owner.totalTroops <= 0)
+                {
+                    Debug.Log("fine truppe da posizionare");
+                }    
+            }
+            
         }
     }
     public void OnRightMouseClick()
     {
-        Debug.Log("Hai RIGHTcliccato sul Territorio: " + name);
+        Debug.Log("Hai RIGHTcliccato sul Territorio: " + number);
     }
 
     public void OnMouseEnter()
     {
-        Debug.Log("Sei entrato nel Territorio: " + name);
+        Debug.Log("Sei entrato nel Territorio: " + number);
         HoverColor();
         if(owner == turnManagerScript.turnPlayer)
         {
@@ -80,7 +91,7 @@ public class Territory : MonoBehaviour
 
     public void OnMouseExit()
     {
-        Debug.Log("Sei uscito dal Territorio: " + name);
+        Debug.Log("Sei uscito dal Territorio: " + number);
         UpdateColor();
         turnManagerScript.SetBaseCursor();  
     }
@@ -116,14 +127,14 @@ public class Territory : MonoBehaviour
         //AddToOwnerList();
     }
 
-    /*public void AddToOwnerList()
+    public void AddToOwnerList()
     {
         if (owner != null)
         {
-            PlayerTerritoryOrderList += 1;
+            //PlayerTerritoryOrderList += 1;
             owner.territories.Add(this.gameObject);
         }
-    }
+    }/*
     public void RemoveToOwnerList()
     {
         if (owner != null)

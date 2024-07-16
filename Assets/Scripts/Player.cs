@@ -17,17 +17,31 @@ public class Player : ScriptableObject
     public List <GameObject> territories = new List <GameObject>();
     public Faction faction;
 
+    public int troopsFromTerritories = 0;
+    public int troopsBonus = 0;
+    public int totalTroops = 0;
+
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        ResetPlayerTroops();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void ResetPlayerTroops()
+    {
+        troopsFromTerritories = 0;
+        troopsBonus = 0;
+        totalTroops = 0;
+    }
+    public void CalcPlayerTroops()
+    {
+        totalTroops = troopsFromTerritories + troopsBonus;
     }
 
 }

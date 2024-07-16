@@ -121,8 +121,11 @@ public class TurnManager : MonoBehaviour
     {
         if(turnPlayer.territories.Count >0)
         {
+            turnPlayer.ResetPlayerTroops();
             troopsToSpawn = Mathf.FloorToInt((float)turnPlayer.territories.Count / territoriesForTrooos); // TO DO AGGIUNGERE TRUPPE BONUS PALAZZI
-            Debug.Log("Truppe da spawnare: " + troopsToSpawn);
+            turnPlayer.troopsFromTerritories = troopsToSpawn;
+            turnPlayer.CalcPlayerTroops();
+            Debug.Log("Truppe da spawnare: " + turnPlayer.totalTroops);
         }
 
     }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TurnManager
   - MapManager
+  - Level
   layers:
   - Default
   - TransparentFX
