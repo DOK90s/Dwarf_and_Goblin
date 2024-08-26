@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: Enemy_4
   playerMaterial: {fileID: 2100000, guid: a767b90cb41509c4996ec404718d474d, type: 2}
-  playerNum: 3
+  playerColor: {r: 0, g: 0, b: 0, a: 0}
+  playerIcon: {fileID: 0}
+  playerNum: 5
+  isGoblin: 0
   isHuman: 0
-  isAlive: 1
+  isAlive: 0
   territories: []
   faction: {fileID: 11400000, guid: e0a7978db5fa85347985d43df4645217, type: 2}
+  troopsFromTerritories: 0
+  troopsBonus: 0
+  totalTroops: 0

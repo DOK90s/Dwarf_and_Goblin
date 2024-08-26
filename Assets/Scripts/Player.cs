@@ -9,9 +9,12 @@ public class Player : ScriptableObject
     [Header("Informazioni")]
     public string playerName;
     public Material playerMaterial;
+    public Color playerColor;
+    public PlayerIcon playerIcon;
 
     [Header("Non toccare pls")]
     public int playerNum = 0;
+    public bool isGoblin = false;
     public bool isHuman = false;
     public bool isAlive = false;
     public List <GameObject> territories = new List <GameObject>();

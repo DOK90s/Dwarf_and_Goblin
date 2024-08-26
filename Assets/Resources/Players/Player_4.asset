@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4678751842b7fd64ebcb42fa140ab763, type: 3}
+  m_Name: Player_4
+  m_EditorClassIdentifier: 
+  playerName: Player_4
+  playerMaterial: {fileID: 2100000, guid: 5835ab0395e10a7438a640719bf5a4ed, type: 2}
+  playerColor: {r: 1, g: 0.9590913, b: 0, a: 1}
+  playerIcon: {fileID: 11400000, guid: 1a5aeecfe0120f946820879dbf98e9a8, type: 2}
+  playerNum: 4
+  isGoblin: 0
+  isHuman: 1
+  isAlive: 1
+  territories: []
+  faction: {fileID: 11400000, guid: e0a7978db5fa85347985d43df4645217, type: 2}
+  troopsFromTerritories: 0
+  troopsBonus: 0
+  totalTroops: 0

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6416f8524bb344443b405dab27d62ab6, type: 3}
+  m_Name: Player2_Icon
+  m_EditorClassIdentifier: 
+  goblinSprite: {fileID: 21300000, guid: 7e6b39e08219841429d8e95f3f405a17, type: 3}
+  dwarfSprite: {fileID: 21300000, guid: 86019d46ec4a3f84d9c923a5dcbddf82, type: 3}
+  borderColor: {r: 0, g: 0, b: 0, a: 1}

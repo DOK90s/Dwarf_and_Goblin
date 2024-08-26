@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Monster
   m_EditorClassIdentifier: 
   FactionMembers:
-  - {fileID: 21300000, guid: 861b06e3b8ba2c7478b29f400a916ce7, type: 3}
+  - {fileID: 21300000, guid: 532b388e67d525340adf539aea7140e9, type: 3}
   factionName: Monsters
   faction: 2
