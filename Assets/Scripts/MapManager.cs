@@ -31,8 +31,6 @@ public class MapManager : MonoBehaviour
         {
             Debug.LogError("playerManagerScript or territoriesInScene is not initialized");
         }
-
-        //METTERE QUI LO SPAWN DEI PLAYER
     }
 
     // Update is called once per frame
@@ -48,6 +46,8 @@ public class MapManager : MonoBehaviour
 
         foreach (Player player in playerManagerScript.gameData.playersInGame)
         {
+
+            //E' DA CAMBIARE E FARE BENE
             int randomTerritory = Random.Range(0, cloneList.Count);
             GameObject playerfirstTerritory = cloneList[randomTerritory];
 

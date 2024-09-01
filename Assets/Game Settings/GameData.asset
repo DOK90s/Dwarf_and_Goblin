@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc29154edc02886489ae07862f341302, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  playersInGame: []
+  playersInGame:
+  - {fileID: 11400000, guid: 98ac27519906151478ff911ea2ba35b4, type: 2}
+  - {fileID: 11400000, guid: a0aabc0f9d9ea064abae024dafa33363, type: 2}
+  - {fileID: 11400000, guid: f16a950030fec504daf0dc450a416753, type: 2}
   allPossiblePlayers:
   - {fileID: 11400000, guid: 98ac27519906151478ff911ea2ba35b4, type: 2}
   - {fileID: 11400000, guid: a0aabc0f9d9ea064abae024dafa33363, type: 2}
@@ -22,3 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75463565302ed6f4eb47f5fdd71af87c, type: 2}
   - {fileID: 11400000, guid: d384e28e496cc504286c3bd789361ac3, type: 2}
   - {fileID: 11400000, guid: f436f6ea6bd5aa8408ea5e2c59358e68, type: 2}
+  turnOrder:
+  - {fileID: 11400000, guid: 98ac27519906151478ff911ea2ba35b4, type: 2}
+  - {fileID: 11400000, guid: a0aabc0f9d9ea064abae024dafa33363, type: 2}
+  - {fileID: 11400000, guid: f16a950030fec504daf0dc450a416753, type: 2}

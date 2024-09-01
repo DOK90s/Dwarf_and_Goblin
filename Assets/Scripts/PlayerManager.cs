@@ -25,10 +25,10 @@ public class PlayerManager : MonoBehaviour
 
     void SetPlayers()
     {
-        gameData.playersInGame.Clear();
+        //gameData.playersInGame.Clear();
         playersCount = 0;
 
-        if (totalPlayersNumber < 2)
+        /*if (totalPlayersNumber < 2)
         {
             totalPlayersNumber = 2;
         }
@@ -46,7 +46,7 @@ public class PlayerManager : MonoBehaviour
         for (int i = 0; i < totalPlayersNumber; i++)
         {
             gameData.playersInGame.Add(gameData.allPossiblePlayers[i]);
-        }
+        }*/
 
         foreach (Player player in gameData.playersInGame)
         {
